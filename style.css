@@ -1,0 +1,115 @@
+* {
+    color: #FFD700;
+    font-family: 'Hind', sans-serif;
+    font-size: large;
+    margin: 0;
+    padding: 0;
+    /* background-image: url("logo.jpg"); */
+}
+
+nav a {
+    font-size: medium;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    /* background: url("logo.jpg"); */
+    /* background-repeat: no-repeat; */
+}
+
+.odd {
+    background: url("logo.png"), #1b1464;
+}
+
+.even {
+    background: url("logo.png"), #6DB3F2;
+}
+
+nav {
+    position: sticky;
+    top: 0px;
+}
+
+.bx {
+    font-size: 30px;
+    margin: 0 auto;
+}
+
+a .bx {
+    position: fixed;
+    bottom: 5px;
+    margin: auto;
+}
+
+img {
+    margin: auto;
+}
+
+ul li {
+    color: white;
+    padding: 5px;
+    font-size: medium;
+}
+
+.odd ul li:hover {
+    color: #1b1464;
+    background-color: #6DB3F2;
+    border-radius: 15px 5px;
+    padding: 5px;
+}
+
+.even ul li:hover {
+    color: #FFD700;
+    background-color: #1b1464;
+    border-radius: 15px 5px;
+    padding: 5px;
+}
+
+ul {
+    /* list-style-type: none; */
+    line-height: 3rem;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+.section {
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+}
+
+.section-item {
+    scroll-snap-align: start;
+}
+
+.initial:hover,
+.initial:link,
+.initial:visited,
+.initial:active {
+    color: #FFD700;
+    font-size: larger;
+    animation: blinker 1.5s ease-in-out infinite;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
